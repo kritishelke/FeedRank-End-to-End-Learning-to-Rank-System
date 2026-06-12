@@ -5,9 +5,9 @@
 .vscode/
 .idea/
 
-# Dashboard dependencies and build output
-feedrank-dashboard/node_modules/
-feedrank-dashboard/dist/
+# Frontend dependencies and build output
+node_modules/
+dist/
 
 # Python local environments and generated data
 feedrank-mind/.venv/
