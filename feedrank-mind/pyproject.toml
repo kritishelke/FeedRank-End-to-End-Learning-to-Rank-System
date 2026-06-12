@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedrank-mind"
+version = "0.1.0"
+description = "End-to-end feed-ranking scaffold for the MIND dataset."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+dependencies = [
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "xgboost",
+  "torch",
+  "pydantic>=2",
+  "pyyaml",
+  "fastapi",
+  "uvicorn[standard]",
+  "pytest",
+  "rich",
+  "typer[all]",
+  "pyarrow",
+  "httpx",
+]
+
+[project.optional-dependencies]
+polars = ["polars"]
+reports = ["matplotlib"]
+
+[project.scripts]
+feedrank-cli = "feedrank.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

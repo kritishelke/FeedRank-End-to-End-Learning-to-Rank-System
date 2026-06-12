@@ -1,0 +1,21 @@
+.DS_Store
+.env
+
+# Local editor state
+.vscode/
+.idea/
+
+# Dashboard dependencies and build output
+feedrank-dashboard/node_modules/
+feedrank-dashboard/dist/
+
+# Python local environments and generated data
+feedrank-mind/.venv/
+feedrank-mind/.pytest_cache/
+feedrank-mind/**/__pycache__/
+feedrank-mind/*.egg-info/
+feedrank-mind/data/raw/
+feedrank-mind/data/interim/
+feedrank-mind/data/processed/
+feedrank-mind/data/features/
+feedrank-mind/data/artifacts/
